@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@lightwing",
+    "./.eslintrc-auto-import.json"
+  ]
+}
