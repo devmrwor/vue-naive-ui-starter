@@ -1,8 +1,4 @@
-import {
-  HelpCircleOutline as help,
-  NotificationsOutline as notifications,
-
-} from '@vicons/ionicons5'
+import { HelpCircleOutline as help, NotificationsOutline as notifications } from '@vicons/ionicons5'
 
 export const icons = {
   help,

@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "pnpm@8.5.1",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -25,6 +26,7 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "eslint": "^8.40.0",
     "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.2",
     "unplugin-auto-import": "^0.15.3",
@@ -39,6 +41,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx,vue,md,json,yml}": [
+      "prettier --write src/**/*.{js,ts,vue}",
       "eslint --fix"
     ]
   }

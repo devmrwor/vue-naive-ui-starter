@@ -11,7 +11,8 @@ const routes: RouteRecordRaw[] = [
         path: '/',
         redirect: { name: 'main.home' },
       },
-      ...mainRoutes],
+      ...mainRoutes,
+    ],
   },
 ]
 

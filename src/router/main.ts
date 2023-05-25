@@ -11,7 +11,6 @@ const mainRoutes: RouteRecordRaw[] = [
     name: 'main.about',
     component: () => import('@/pages/About'),
   },
-
 ]
 
 export default mainRoutes
