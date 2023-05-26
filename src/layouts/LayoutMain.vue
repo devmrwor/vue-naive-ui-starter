@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { LayoutContent, LayoutHeader, LayoutSidebar } from './components'
+import { LayoutHeader, LayoutSidebar } from './components'
+
+const LayoutContent = defineAsyncComponent(() => import('./components/LayoutContent.vue'))
 </script>
 
 <template>
