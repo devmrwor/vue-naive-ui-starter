@@ -2,6 +2,7 @@
 import type { MenuOption } from 'naive-ui'
 import { NLayoutSider, NMenu } from 'naive-ui'
 import { RouterLink, useRoute } from 'vue-router'
+import type { NavigationItem } from '@/config/navigation'
 import { navigation } from '@/config/navigation'
 import { Icon } from '@/components/shared'
 
@@ -13,7 +14,7 @@ function mapping(items: NavigationItem[]): MenuOption[] {
     ...item,
     key: item.name,
     label: item.name != null ? () => h(RouterLink, { to: item }, { default: () => item.label }) : item.label,
-    icon: item.icon != null ? () => h(Icon, { type: item.icon }) : undefined,
+    icon: item.icon != null ? () => h(Icon as any, { type: item.icon }) : undefined,
     children: item.children && mapping(item.children),
   }))
 }

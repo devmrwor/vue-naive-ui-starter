@@ -1,7 +1,7 @@
-interface NavigationItem {
-  label: string
-  icon?: string
-  name: string
-  params?: { [key: string]: string }
-  children?: NavigationItem[]
+import { MessageApiInjection } from 'naive-ui/es/message/src/MessageProvider'
+
+declare global {
+  interface Window {
+    $message: MessageApiInjection
+  }
 }
