@@ -1,5 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router'
 import mainRoutes from './main'
+import misc from './misc'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -12,6 +13,18 @@ const routes: RouteRecordRaw[] = [
         redirect: { name: 'main.home' },
       },
       ...mainRoutes,
+    ],
+  },
+  ...misc,
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: () => import('@/layouts/LayoutMain.vue'),
+    children: [
+      {
+        path: '/:pathMatch(.*)*',
+        component: () => import('@/pages/Misc/NotFound.vue'),
+      },
     ],
   },
 ]

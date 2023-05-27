@@ -1,12 +1,10 @@
 <script lang="ts" setup>
-import { useRouter } from 'vue-router'
 import { useMessage } from 'naive-ui'
 import useNavigation from '@/composables/navigation'
 import { Icon } from '@/components/shared'
 
-const { refreshRoute } = useNavigation()
+const { router, refreshRoute } = useNavigation()
 
-const router = useRouter()
 const message = useMessage()
 const me = ref({
   name: 'Admin',
