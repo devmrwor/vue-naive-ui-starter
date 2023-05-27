@@ -21,6 +21,4 @@ dist-ssr
 *.sln
 *.sw?
 .eslintrc-auto-import.json
-src/auto-import.d.ts
-src/components.d.ts
 .vercel
