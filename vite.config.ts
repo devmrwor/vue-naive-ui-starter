@@ -5,6 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
 import WindiCSS from 'vite-plugin-windicss'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -31,6 +32,15 @@ export default defineConfig({
     Components({
       resolvers: [NaiveUiResolver()],
       dts: './src/components.d.ts',
+    }),
+    VitePWA({
+      registerType: 'autoUpdate',
+      devOptions: {
+        enabled: true,
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,html,css,svg}'],
+      },
     }),
   ],
   resolve: {

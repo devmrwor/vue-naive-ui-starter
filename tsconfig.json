@@ -17,6 +17,9 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "types": [
+      "vite-plugin-pwa/client"
+    ],
 
     /* Linting */
     "strict": true,

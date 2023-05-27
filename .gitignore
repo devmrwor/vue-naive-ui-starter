@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+dev-dist
 dist
 dist-ssr
 *.local
@@ -20,4 +21,6 @@ dist-ssr
 *.sln
 *.sw?
 .eslintrc-auto-import.json
+src/auto-import.d.ts
+src/components.d.ts
 .vercel
