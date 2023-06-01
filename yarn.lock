@@ -1264,7 +1264,7 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/set-array/-/set-array-1.1.2.tgz#7c6cf998d6d20b914c0a55a91ae928ff25965e72"
   integrity sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==
 
-"@jridgewell/source-map@^0.3.2":
+"@jridgewell/source-map@^0.3.3":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/source-map/-/source-map-0.3.3.tgz#8108265659d4c33e72ffe14e33d6cc5eb59f2fda"
   integrity sha512-b+fsZXeLYi9fEULmfBrhxn4IrPlINf8fiNarzTof004v3lFdntdwa9PF7vFJqm3mg7s+ScJMxXaE3Acp1irZcg==
@@ -2231,9 +2231,9 @@ callsites@^3.0.0:
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
 caniuse-lite@^1.0.30001489:
-  version "1.0.30001491"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001491.tgz#eab0e0f392de6f7411751d148de9b5bd6b203e46"
-  integrity sha512-17EYIi4TLnPiTzVKMveIxU5ETlxbSO3B6iPvMbprqnKh4qJsQGk5Nh1Lp4jIMAE0XfrujsJuWZAM3oJdMHaKBA==
+  version "1.0.30001492"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001492.tgz#4a06861788a52b4c81fd3344573b68cc87fe062b"
+  integrity sha512-2efF8SAZwgAX1FJr87KWhvuJxnGJKOnctQa8xLOskAXNXq8oiuqgl6u1kk3fFpsp3GgvzlRjiK1sl63hNtFADw==
 
 chai@^4.3.7:
   version "4.3.7"
@@ -2617,9 +2617,9 @@ ejs@^3.1.6:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.411:
-  version "1.4.413"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.413.tgz#0067c3122946ae234cbefb9401ecefde851cdcf2"
-  integrity sha512-Gd+/OAhRca06dkVxIQo/W7dr6Nmk9cx6lQdZ19GvFp51k5B/lUAokm6SJfNkdV8kFLsC3Z4sLTyEHWCnB1Efbw==
+  version "1.4.417"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.417.tgz#a0c7eb992e68287fa50c8da5a5238b01f20b9a82"
+  integrity sha512-8rY8HdCxuSVY8wku3i/eDac4g1b4cSbruzocenrqBlzqruAZYHjQCHIjC66dLR9DXhEHTojsC4EjhZ8KmzwXqA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -5094,12 +5094,12 @@ tempy@^0.6.0:
     unique-string "^2.0.0"
 
 terser@^5.0.0:
-  version "5.17.6"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.17.6.tgz#d810e75e1bb3350c799cd90ebefe19c9412c12de"
-  integrity sha512-V8QHcs8YuyLkLHsJO5ucyff1ykrLVsR4dNnS//L5Y3NiSXpbK1J+WMVUs67eI0KTxs9JtHhgEQpXQVHlHI92DQ==
+  version "5.17.7"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.17.7.tgz#2a8b134826fe179b711969fd9d9a0c2479b2a8c3"
+  integrity sha512-/bi0Zm2C6VAexlGgLlVxA0P2lru/sdLyfCVaRMfKVo9nWxbmz7f/sD8VPybPeSUJaJcwmCJis9pBIhcVcG1QcQ==
   dependencies:
-    "@jridgewell/source-map" "^0.3.2"
-    acorn "^8.5.0"
+    "@jridgewell/source-map" "^0.3.3"
+    acorn "^8.8.2"
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
@@ -5401,9 +5401,9 @@ vite-node@0.31.4:
     vite "^3.0.0 || ^4.0.0"
 
 vite-plugin-pwa@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.16.0.tgz#822a356d0a7c399f92b8278662d29f63b1a70a1f"
-  integrity sha512-E+AQRzHxqNU4ZhEeR8X37/foZB+ezJEhXauE/mcf1UITY6k2Pa1dtlFl+BQu57fTdiVlWim5S0Qy44Yap93Dkg==
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.16.1.tgz#3853a951d8758a60253415867b351b11f6e5d845"
+  integrity sha512-OdD+ck+jiCkeUQPwXCNttR62ZC2On4wasn+03Qyx0x1bLGv1IXgl59WexpWMbgKD7jZVjozWGcy3etRJJzwsvA==
   dependencies:
     debug "^4.3.4"
     fast-glob "^3.2.12"
