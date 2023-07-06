@@ -35,7 +35,7 @@
     "happy-dom": "^10.0.0",
     "lint-staged": "^13.2.2",
     "naive-ui": "^2.34.3",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.2",
     "unplugin-auto-import": "^0.16.0",
