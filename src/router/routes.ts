@@ -4,6 +4,11 @@ import misc from './misc'
 
 const routes: RouteRecordRaw[] = [
   {
+    path: '/login',
+    name: 'auth.login',
+    component: () => import('@/pages/Auth/Login.vue'),
+  },
+  {
     name: 'main',
     path: '/',
     component: () => import('@/layouts/LayoutMain.vue'),

@@ -2,8 +2,10 @@
 import { useMessage } from 'naive-ui'
 import useNavigation from '@/composables/navigation'
 import { Icon } from '@/components/shared'
+import { useAuthStore } from '@/stores/auth'
 
 const { router, refreshRoute } = useNavigation()
+const authStore = useAuthStore()
 
 const message = useMessage()
 const me = ref({
@@ -22,9 +24,17 @@ const options = computed(() => [
   { key: 'logout', label: 'Sign out' },
 ])
 
+function logout() {
+  authStore.setAuth()
+
+  router.push({
+    name: 'auth.login',
+  })
+}
+
 async function handleOptionsSelect(key: unknown): Promise<void> {
   if ((key as string) === 'logout')
-    await router.push({ name: 'login' })
+    logout()
   else if ((key as string) === 'me')
     message.success(`Welcome back, ${me.value?.name as string}!`)
 }
